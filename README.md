@@ -14,7 +14,7 @@ pg-terminal is a command-line tool for connecting to and interacting with Postgr
 ### Version 1
 1. download the current realse from gitHub
 ~~~ bash
-wget https://github.com/tweigel-dev/pg-terminal/releases/download/v0.0.3/pg-terminal
+wget https://github.com/tweigel-dev/pg-terminal/releases/download/v0.0.4/pg-terminal
 ~~~
 2. make the pg-terminal file executable with:
 ~~~bash
