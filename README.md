@@ -11,6 +11,26 @@ pg-terminal is a command-line tool for connecting to and interacting with Postgr
 
 ## Installation
 
+### Version 1
+1. download the current realse from gitHub
+~~~ bash
+wget https://github.com/tweigel-dev/pg-terminal/releases/download/v0.0.3/pg-terminal
+~~~
+2. make the pg-terminal file executable with:
+~~~bash
+chmod +x pg-terminal
+~~~
+3. move to folder
+~~~bash
+sudo mv pg-terminal /usr/local/bin/pg-terminal
+~~~
+4. enjoy
+~~~bash
+pg-terminal --help
+~~~
+5. contribute to pg-terminal
+### Version 2 (build from scratch)
+
 To install pg-terminal, you will need to have Go installed on your system.
 
 1. Download the source code for pg-terminal.

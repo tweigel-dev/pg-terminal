@@ -12,6 +12,7 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
+	Version: "v0.0.4",
 	Use:   "pg-terminal",
 	Short: "A tool for sending SQL statements to a PostgreSQL instance",
 	Long: `pg-terminal is a command-line tool for sending SQL statements to a 
