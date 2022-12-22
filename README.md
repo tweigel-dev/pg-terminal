@@ -39,5 +39,9 @@ For a complete list of available flags and options, run `pg-terminal --help`.
 pg-terminal is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 
+## Motivation
+
+During work I searched for a cli postgres client I can just copy into a small docker container and use it without adding depedencies. Every other tool I tried needed to install more or had to have an interpreter or compiler. So I decided to publish a small lightweight version of a postgres CLI tool to interact with an postgres instance. 
+
 ## Disclaimer
 This code is written in cooperation with chatGPT3. the main part or the code, tests, github actions and readme is created with chatGPT3. 
