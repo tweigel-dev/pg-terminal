@@ -9,7 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build binary
-        run: go build 
+        run: |
+          go build -o bin/pg-terminal
+          GOOS=darwin GOARCH=amd64 go build -o bin/pg-terminal-darwin-amd64
+          GOOS=linux GOARCH=amd64 go build -o bin/pg-terminal-linux-amd64
+          GOOS=windows GOARCH=amd64 go build -o bin/pg-terminal-windows-amd64.exe
       - name: Create release
         uses: actions/create-release@v1
         id: create_release
@@ -26,6 +30,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: pg-terminal
+          asset_path: ./bin/
           asset_name: pg-terminal
           asset_content_type: application/zip
